@@ -14,6 +14,7 @@ public class BackgroundLoop : MonoBehaviour {
     private Vector3 lastPosition;
 
     public bool wrap;
+    public float groundCameraY;
 
     #region Unity Methods
 

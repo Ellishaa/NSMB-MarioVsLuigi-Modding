@@ -44,6 +44,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/ModdedTower.unity
     guid: f12acc39298af5b4ca7f6844af480c4b
+  - enabled: 1
+    path: Assets/Scenes/Levels/ModdedCliffs.unity
+    guid: a7ccbf37da265eb43832d6bcfd1a1d16
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 49335f30d253220488d2d332ade6e901,
       type: 2}

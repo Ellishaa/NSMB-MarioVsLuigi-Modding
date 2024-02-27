@@ -36082,6 +36082,7 @@ MonoBehaviour:
   - {fileID: 1215474819}
   - {fileID: 1774958591}
   - {fileID: 1885570876}
+  - {fileID: 1885570876}
   sliderText: {fileID: 1514315584}
   lobbyText: {fileID: 465989235}
   currentMaxPlayers: {fileID: 1732849129}
@@ -36173,6 +36174,7 @@ MonoBehaviour:
   - '[C] Bonus'
   - '[C] Desert'
   - '[M] Tower'
+  - '[M] Cliffs'
   debugMaps: []
   colorManager: {fileID: 1983555074}
 --- !u!4 &887693662
@@ -49495,8 +49497,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 47220571}
   m_HandleRect: {fileID: 47220570}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.65972626
+  m_Value: 0.9999998
+  m_Size: 0.6601757
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -101097,7 +101099,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1141870934}
   m_HandleRect: {fileID: 1141870933}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:

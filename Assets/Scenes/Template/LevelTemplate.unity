@@ -214,6 +214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 410734885}
   - component: {fileID: 410734886}
+  - component: {fileID: 410734887}
   m_Layer: 1
   m_Name: Background
   m_TagString: Untagged
@@ -288,6 +289,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &410734887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410734884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0437812455ea1cd41b3558eee832a1ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1001 &493691703
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -415,6 +429,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144317710558697061, guid: 43d56bd18d06e9b4abe323618a20a228,
+        type: 3}
+      propertyPath: groundCameraY
+      value: 3.094157
       objectReference: {fileID: 0}
     - target: {fileID: 7298383080133919252, guid: 43d56bd18d06e9b4abe323618a20a228,
         type: 3}
@@ -604,6 +623,7 @@ GameObject:
   - component: {fileID: 1604677093}
   - component: {fileID: 1604677095}
   - component: {fileID: 1604677094}
+  - component: {fileID: 1604677096}
   m_Layer: 1
   m_Name: SmallClouds
   m_TagString: Untagged
@@ -691,6 +711,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1604677096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604677092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0437812455ea1cd41b3558eee832a1ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1616307249
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,6 +735,7 @@ GameObject:
   - component: {fileID: 1616307250}
   - component: {fileID: 1616307252}
   - component: {fileID: 1616307251}
+  - component: {fileID: 1616307253}
   m_Layer: 1
   m_Name: BigClouds
   m_TagString: Untagged
@@ -789,6 +823,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1616307253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616307249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0437812455ea1cd41b3558eee832a1ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1682953252
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,6 +846,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1682953253}
   - component: {fileID: 1682953254}
+  - component: {fileID: 1682953255}
   m_Layer: 1
   m_Name: Foreground
   m_TagString: Untagged
@@ -873,6 +921,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!114 &1682953255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682953252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0437812455ea1cd41b3558eee832a1ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1806822999
 GameObject:
   m_ObjectHideFlags: 0

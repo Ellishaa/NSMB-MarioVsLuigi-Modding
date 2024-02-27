@@ -49,10 +49,17 @@ public class CameraController : MonoBehaviour {
         LateUpdate();
 
         Transform t = GameObject.FindGameObjectWithTag("Backgrounds").transform;
-        Debug.Log(t.GetChild(0).childCount);
-        
+        //Debug.Log(t.GetChild(0).childCount);
+        GameObject cam = GameObject.FindGameObjectWithTag("MainCamera");
+        float difference_y = cam.transform.position.y - cam.GetComponent<BackgroundLoop>().groundCameraY;
+        Debug.Log(difference_y);
         for (int i = 0; i < t.childCount; i++){
-            t.GetChild(i).transform.position = new Vector3(t.GetChild(i).transform.position.x, t.GetChild(i).GetComponent<GetOriginalPosition>().originalPosition.y, t.GetChild(i).transform.position.z);
+            GameObject obj = t.GetChild(i).gameObject;
+            float parallaxSpeed = 1 - Mathf.Clamp01(Mathf.Abs(cam.transform.position.z / obj.transform.position.z));
+            float parallaxDisplacementY = difference_y * parallaxSpeed;
+
+
+            obj.transform.position = new Vector3(obj.transform.position.x, obj.GetComponent<GetOriginalPosition>().originalPosition.y + parallaxDisplacementY, obj.transform.position.z);
         }
     }
 
