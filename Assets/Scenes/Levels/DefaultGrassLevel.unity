@@ -345,6 +345,7 @@ GameObject:
   - component: {fileID: 407379217}
   - component: {fileID: 407379219}
   - component: {fileID: 407379220}
+  - component: {fileID: 407379221}
   m_Layer: 1
   m_Name: BigClouds
   m_TagString: Untagged
@@ -432,6 +433,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -0.2
+--- !u!114 &407379221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407379216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2494d39c21edfcb4d9aa211b4bb8ffc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &595298908
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,7 +815,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 32
-      m_TileSpriteIndex: 4
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -3275,7 +3289,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 5
+  - m_RefCount: 4
     m_Data: {fileID: 3313547660045521459, guid: 5f97a3adca3c1c04e9b3eb9c5bc49eae,
       type: 3}
   - m_RefCount: 13
@@ -3316,7 +3330,7 @@ Tilemap:
       type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 55
+  - m_RefCount: 56
     m_Data: {fileID: -4988122654707678320, guid: 5f97a3adca3c1c04e9b3eb9c5bc49eae,
       type: 3}
   - m_RefCount: 0
@@ -4397,6 +4411,7 @@ GameObject:
   - component: {fileID: 1550383124}
   - component: {fileID: 1550383126}
   - component: {fileID: 1550383127}
+  - component: {fileID: 1550383128}
   m_Layer: 1
   m_Name: SmallClouds
   m_TagString: Untagged
@@ -4484,6 +4499,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -0.1
+--- !u!114 &1550383128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550383123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2494d39c21edfcb4d9aa211b4bb8ffc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1674679210
 GameObject:
   m_ObjectHideFlags: 0
@@ -4608,6 +4636,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1831778354}
   - component: {fileID: 1831778353}
+  - component: {fileID: 1831778355}
   m_Layer: 1
   m_Name: Background
   m_TagString: Untagged
@@ -4682,6 +4711,19 @@ Transform:
   m_Father: {fileID: 1542081886}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1831778355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831778352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2494d39c21edfcb4d9aa211b4bb8ffc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1901234080
 GameObject:
   m_ObjectHideFlags: 0
@@ -4754,6 +4796,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1959336206}
   - component: {fileID: 1959336205}
+  - component: {fileID: 1959336207}
   m_Layer: 1
   m_Name: Foreground
   m_TagString: Untagged
@@ -4828,6 +4871,19 @@ Transform:
   m_Father: {fileID: 1542081886}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1959336207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959336204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2494d39c21edfcb4d9aa211b4bb8ffc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1001 &1961246879
 PrefabInstance:
   m_ObjectHideFlags: 0

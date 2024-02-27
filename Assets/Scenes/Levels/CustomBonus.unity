@@ -541,6 +541,7 @@ GameObject:
   m_Component:
   - component: {fileID: 420344210}
   - component: {fileID: 420344211}
+  - component: {fileID: 420344212}
   m_Layer: 1
   m_Name: Blue
   m_TagString: Untagged
@@ -615,6 +616,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
+--- !u!114 &420344212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420344209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2494d39c21edfcb4d9aa211b4bb8ffc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &493547846
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,6 +699,11 @@ PrefabInstance:
         type: 3}
       propertyPath: sceneViewId
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 482268096050949388, guid: 43d56bd18d06e9b4abe323618a20a228,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 822077676654890402, guid: 43d56bd18d06e9b4abe323618a20a228,
         type: 3}
@@ -875,6 +894,11 @@ PrefabInstance:
     - target: {fileID: 6355964096291475732, guid: 43d56bd18d06e9b4abe323618a20a228,
         type: 3}
       propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144317710558697061, guid: 43d56bd18d06e9b4abe323618a20a228,
+        type: 3}
+      propertyPath: offsetBGy
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7298383080133919252, guid: 43d56bd18d06e9b4abe323618a20a228,
@@ -1624,6 +1648,7 @@ GameObject:
   m_Component:
   - component: {fileID: 852669703}
   - component: {fileID: 852669704}
+  - component: {fileID: 852669705}
   m_Layer: 1
   m_Name: Red
   m_TagString: Untagged
@@ -1698,6 +1723,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
+--- !u!114 &852669705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852669702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2494d39c21edfcb4d9aa211b4bb8ffc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &859204836
 GameObject:
   m_ObjectHideFlags: 0
@@ -2127,6 +2165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1080608883}
   - component: {fileID: 1080608884}
+  - component: {fileID: 1080608885}
   m_Layer: 1
   m_Name: RightOfBlueBonus
   m_TagString: Untagged
@@ -2201,6 +2240,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1080608885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080608882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2494d39c21edfcb4d9aa211b4bb8ffc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1090718753
 GameObject:
   m_ObjectHideFlags: 0
@@ -2735,6 +2787,7 @@ GameObject:
   - component: {fileID: 1417493316}
   - component: {fileID: 1417493318}
   - component: {fileID: 1417493317}
+  - component: {fileID: 1417493319}
   m_Layer: 1
   m_Name: Clouds
   m_TagString: Untagged
@@ -2822,6 +2875,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1417493319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417493315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2494d39c21edfcb4d9aa211b4bb8ffc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1001 &1429955982
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12498,6 +12564,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1937306560}
   - component: {fileID: 1937306561}
+  - component: {fileID: 1937306562}
   m_Layer: 1
   m_Name: RightOfRedBonus
   m_TagString: Untagged
@@ -12572,6 +12639,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1937306562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937306559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2494d39c21edfcb4d9aa211b4bb8ffc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1001 &2022837055
 PrefabInstance:
   m_ObjectHideFlags: 0

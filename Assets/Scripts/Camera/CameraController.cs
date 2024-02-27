@@ -47,6 +47,13 @@ public class CameraController : MonoBehaviour {
         currentPosition = (Vector2) transform.position + airOffset;
         smoothDampVel = Vector3.zero;
         LateUpdate();
+
+        Transform t = GameObject.FindGameObjectWithTag("Backgrounds").transform;
+        Debug.Log(t.GetChild(0).childCount);
+        
+        for (int i = 0; i < t.childCount; i++){
+            t.GetChild(i).transform.position = new Vector3(t.GetChild(i).transform.position.x, t.GetChild(i).GetComponent<GetOriginalPosition>().originalPosition.y, t.GetChild(i).transform.position.z);
+        }
     }
 
     private Vector3 CalculateNewPosition() {

@@ -16,11 +16,14 @@ public class BackgroundLoop : MonoBehaviour {
     public bool wrap;
 
     #region Unity Methods
+
+
+
+
     public void Start() {
         Instance = this;
 
         Transform t = GameObject.FindGameObjectWithTag("Backgrounds").transform;
-
         children = new GameObject[t.childCount];
         ppus = new float[t.childCount];
         truePositions = new Vector3[t.childCount];
@@ -43,6 +46,8 @@ public class BackgroundLoop : MonoBehaviour {
         lastPosition = transform.position;
     }
 
+    
+
     public void LateUpdate() {
         Reposition();
     }
@@ -53,12 +58,14 @@ public class BackgroundLoop : MonoBehaviour {
         for (int i = 0; i < children.Length; i++) {
             GameObject obj = children[i];
             float difference = transform.position.x - lastPosition.x + (obj.transform.position.x - positionsAfterPixelSnap[i].x);
+            float difference_y = transform.position.y - lastPosition.y + (obj.transform.position.y - positionsAfterPixelSnap[i].y);
             float parallaxSpeed = 1 - Mathf.Clamp01(Mathf.Abs(lastPosition.z / obj.transform.position.z));
 
             if (wrap)
                 parallaxSpeed = 1;
 
             truePositions[i] += difference * parallaxSpeed * Vector3.right;
+            truePositions[i] += difference_y * parallaxSpeed * Vector3.up;
             obj.transform.position = positionsAfterPixelSnap[i] = PixelClamp(truePositions[i], obj.transform.lossyScale, ppus[i]);
 
             RepositionChildObjects(obj);
