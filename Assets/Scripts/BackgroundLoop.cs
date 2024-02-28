@@ -59,14 +59,17 @@ public class BackgroundLoop : MonoBehaviour {
         for (int i = 0; i < children.Length; i++) {
             GameObject obj = children[i];
             float difference = transform.position.x - lastPosition.x + (obj.transform.position.x - positionsAfterPixelSnap[i].x);
-            float difference_y = transform.position.y - lastPosition.y + (obj.transform.position.y - positionsAfterPixelSnap[i].y);
+            //float difference_y = transform.position.y - lastPosition.y + (obj.transform.position.y - positionsAfterPixelSnap[i].y);
             float parallaxSpeed = 1 - Mathf.Clamp01(Mathf.Abs(lastPosition.z / obj.transform.position.z));
 
             if (wrap)
                 parallaxSpeed = 1;
 
             truePositions[i] += difference * parallaxSpeed * Vector3.right;
-            truePositions[i] += difference_y * parallaxSpeed * Vector3.up;
+            //truePositions[i] += difference_y * parallaxSpeed * Vector3.up;
+            float layerNewY = obj.GetComponent<GetOriginalPosition>().originalPosition.y + (this.transform.position.y - groundCameraY) * parallaxSpeed;
+            truePositions[i] = new Vector3(truePositions[i].x, layerNewY, truePositions[i].z);
+
             obj.transform.position = positionsAfterPixelSnap[i] = PixelClamp(truePositions[i], obj.transform.lossyScale, ppus[i]);
 
             RepositionChildObjects(obj);
