@@ -523,7 +523,8 @@ public class PlayerController : MonoBehaviourPun, IFreezableEntity, ICustomSeria
                             otherView.RPC(nameof(Knockback), RpcTarget.All, otherObj.transform.position.x < body.position.x, 1, true, photonView.ViewID);
                             photonView.RPC(nameof(Knockback), RpcTarget.All, otherObj.transform.position.x > body.position.x, 1, true, otherView.ViewID);
                         } else {
-                            otherView.RPC(nameof(Powerdown), RpcTarget.All, false);
+                            //otherView.RPC(nameof(Powerdown), RpcTarget.All, false);
+                            otherView.RPC(nameof(Knockback), RpcTarget.All, otherObj.transform.position.x < body.position.x, 1, true, photonView.ViewID);
                         }
                         float dotRight = Vector2.Dot((body.position - other.body.position).normalized, Vector2.right);
                         facingRight = dotRight > 0;
@@ -635,13 +636,43 @@ public class PlayerController : MonoBehaviourPun, IFreezableEntity, ICustomSeria
             if (knockback || invincible > 0 || state == Enums.PowerupState.MegaMushroom)
                 return;
 
-            if (state == Enums.PowerupState.BlueShell && (inShell || crouching || groundpound)) {
+
+
+            if (state == Enums.PowerupState.BlueShell)
+            {
+                // Has blue shell
+                if (fireball.isIceball) 
+                {
+                    // The ball we hit is an iceball
+                    if ((crouching && !inShell) || groundpound)
+                    {
+                        // We are in defensive pose (shell not moving)
+                        slowdownTimer = 0.65f;
+                        return;
+                    }
+                }
+                else
+                {
+                    // The ball we hit is a fireball
+                    if (crouching || inShell || groundpound)
+                    {
+                        // We are in shell pose (moving or not)
+                        // We are immune to fireballs
+                        return;
+                    }
+                }
+                
+            }
+            /*if (state == Enums.PowerupState.BlueShell && ((crouching && !inShell) || groundpound)) {
                 if (fireball.isIceball) {
                     //slowdown
                     slowdownTimer = 0.65f;
                 }
                 return;
-            }
+            }*/
+
+
+
 
             if (state == Enums.PowerupState.MiniMushroom) {
                 photonView.RPC(nameof(Powerdown), RpcTarget.All, false);
