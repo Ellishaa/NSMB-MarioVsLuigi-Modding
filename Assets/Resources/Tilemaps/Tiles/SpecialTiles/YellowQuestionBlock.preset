@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: YellowQuestionBlock
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: 095bd078400c1c840a7b75c079322641,
+      type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_AnimatedSprites.Array.size
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_AnimatedSprites.Array.data[0]
+    value: 
+    objectReference: {fileID: -8917260427315313510, guid: f4b7221be8b79c94c9c8919163014cb0,
+      type: 3}
+  - target: {fileID: 0}
+    propertyPath: m_AnimatedSprites.Array.data[1]
+    value: 
+    objectReference: {fileID: -8151411539534625427, guid: f4b7221be8b79c94c9c8919163014cb0,
+      type: 3}
+  - target: {fileID: 0}
+    propertyPath: m_AnimatedSprites.Array.data[2]
+    value: 
+    objectReference: {fileID: 215657226047675787, guid: f4b7221be8b79c94c9c8919163014cb0,
+      type: 3}
+  - target: {fileID: 0}
+    propertyPath: m_AnimatedSprites.Array.data[3]
+    value: 
+    objectReference: {fileID: 2250798203632615395, guid: f4b7221be8b79c94c9c8919163014cb0,
+      type: 3}
+  - target: {fileID: 0}
+    propertyPath: m_AnimatedSprites.Array.data[4]
+    value: 
+    objectReference: {fileID: -8917260427315313510, guid: f4b7221be8b79c94c9c8919163014cb0,
+      type: 3}
+  - target: {fileID: 0}
+    propertyPath: m_MinSpeed
+    value: 8
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_MaxSpeed
+    value: 8
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_AnimationStartTime
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_AnimationStartFrame
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_TileColliderType
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: particleColor.r
+    value: 0.9254902
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: particleColor.g
+    value: 0.80784315
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: particleColor.b
+    value: 0.39215687
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: particleColor.a
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: breakableBySmallMario
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: breakableByLargeMario
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: breakableByGiantMario
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: breakableByShells
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: breakableByBombs
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: bumpIfNotBroken
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: bumpIfBroken
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: resultTile
+    value: SpecialTiles/EmptyYellowQuestion
+    objectReference: {fileID: 0}
+  m_ExcludedProperties: []
