@@ -267,8 +267,16 @@ public class PlayerAnimationController : MonoBehaviourPun {
             materialBlock.SetColor("GlowColor", GlowColor);
 
         //Customizeable player color
-        materialBlock.SetVector("OverallsColor", primaryColor);
-        materialBlock.SetVector("ShirtColor", secondaryColor);
+        if (controller.state == Enums.PowerupState.HammerFlower)
+        {
+            materialBlock.SetVector("OverallsColor", Color.black);
+            materialBlock.SetVector("ShirtColor", primaryColor);
+        }
+        else
+        {
+            materialBlock.SetVector("OverallsColor", primaryColor);
+            materialBlock.SetVector("ShirtColor", secondaryColor);
+        }
 
         Vector3 giantMultiply = Vector3.one;
         if (controller.giantTimer > 0 && controller.giantTimer < 4) {

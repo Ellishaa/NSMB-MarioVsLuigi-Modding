@@ -805,7 +805,7 @@ public class PlayerController : MonoBehaviourPun, IFreezableEntity, ICustomSeria
 
             int count = 0;
             foreach (FireballMover existingFire in FindObjectsOfType<FireballMover>()) {
-                if (existingFire.photonView.IsMine && ++count >= 6)
+                if (existingFire.photonView.IsMine && ++count >= 2)
                     return;
             }
 
