@@ -651,6 +651,10 @@ public class PlayerController : MonoBehaviourPun, IFreezableEntity, ICustomSeria
                         return;
                     }
                 }
+                else if (fireball.isHammer)
+                {
+                    
+                }
                 else
                 {
                     // The ball we hit is a fireball
@@ -1052,6 +1056,7 @@ public class PlayerController : MonoBehaviourPun, IFreezableEntity, ICustomSeria
         case Enums.PowerupState.FireFlower:
         case Enums.PowerupState.IceFlower:
         case Enums.PowerupState.PropellerMushroom:
+        case Enums.PowerupState.HammerFlower:
         case Enums.PowerupState.BlueShell: {
             state = Enums.PowerupState.Mushroom;
             powerupFlash = 2f;
