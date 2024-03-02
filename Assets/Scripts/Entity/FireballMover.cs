@@ -23,7 +23,6 @@ public class FireballMover : MonoBehaviourPun {
         if (isHammer)
         {
             body.velocity = new Vector2(speed * (left ? -1 : 1), 2.3f * speed);
-            this.GetComponent<Animator>().SetBool("left", left);
             this.GetComponent<SpriteRenderer>().flipX = left;
         }
         else

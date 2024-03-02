@@ -13,13 +13,13 @@ GameObject:
   - component: {fileID: 1011982274984717419}
   - component: {fileID: 1186833380152900418}
   - component: {fileID: -1769135492019179076}
+  - component: {fileID: -5515596598052265064}
   - component: {fileID: 376300006025663058}
   - component: {fileID: -3035145909365686512}
   - component: {fileID: 1011982274984717417}
   - component: {fileID: 2269455486527583307}
   - component: {fileID: 1493637187516899100}
   - component: {fileID: 7546659253023383375}
-  - component: {fileID: -5515596598052265064}
   m_Layer: 9
   m_Name: Hammer
   m_TagString: Fireball
@@ -102,7 +102,7 @@ SpriteRenderer:
   m_SortingLayerID: -755315459
   m_SortingLayer: 1
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 31202ccaa165ba949a04feebd44a8c4a, type: 3}
+  m_Sprite: {fileID: 1124107386, guid: 295568b278ae3ff45a4fca449bbd226c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -160,6 +160,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.11, y: 0.11}
   m_EdgeRadius: 0
+--- !u!95 &-5515596598052265064
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011982274984717421}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bb3f108c35c9daa49904fd716780bd50, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &376300006025663058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,26 +277,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interpolate: 1
   body: {fileID: 1186833380152900418}
---- !u!95 &-5515596598052265064
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1011982274984717421}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bb3f108c35c9daa49904fd716780bd50, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4295026986443583635
 GameObject:
   m_ObjectHideFlags: 0

@@ -653,7 +653,8 @@ public class PlayerController : MonoBehaviourPun, IFreezableEntity, ICustomSeria
                 }
                 else if (fireball.isHammer)
                 {
-                    
+                    photonView.RPC(nameof(Knockback), RpcTarget.All, fireball.left, 1, true, fireball.photonView.ViewID);
+                    return;
                 }
                 else
                 {
