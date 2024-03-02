@@ -21,4 +21,4 @@ MonoBehaviour:
   vertical: 0
   custom: 1
   lives: 0
-  reserveSprite: {fileID: 0}
+  reserveSprite: {fileID: 21300000, guid: 6f64311392c528d4ba3c30b4b0633adb, type: 3}
