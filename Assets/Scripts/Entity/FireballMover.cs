@@ -3,7 +3,7 @@ using Photon.Pun;
 
 public class FireballMover : MonoBehaviourPun {
 
-    public bool left, isIceball;
+    public bool left, isIceball, isHammer;
 
     [SerializeField] private float speed = 3f, bounceHeight = 4.5f, terminalVelocity = 6.25f;
 
@@ -20,7 +20,17 @@ public class FireballMover : MonoBehaviourPun {
         if (data.Length > 1 && isIceball)
             speed += Mathf.Abs((float) data[1] / 3f);
 
-        body.velocity = new Vector2(speed * (left ? -1 : 1), -speed);
+        if (isHammer)
+        {
+            body.velocity = new Vector2(speed * (left ? -1 : 1), 2.3f * speed);
+            this.GetComponent<Animator>().SetBool("left", left);
+            this.GetComponent<SpriteRenderer>().flipX = left;
+        }
+        else
+        {
+            body.velocity = new Vector2(speed * (left ? -1 : 1), -speed);
+        }
+        
     }
 
     public void FixedUpdate() {
@@ -40,6 +50,10 @@ public class FireballMover : MonoBehaviourPun {
     private void HandleCollision() {
         physics.UpdateCollisions();
 
+        if (isHammer)
+        {
+            return;
+        }
         if (physics.onGround && !breakOnImpact) {
             float boost = bounceHeight * Mathf.Abs(Mathf.Sin(physics.floorAngle * Mathf.Deg2Rad)) * 1.25f;
             if (Mathf.Sign(physics.floorAngle) != Mathf.Sign(body.velocity.x))
@@ -49,6 +63,7 @@ public class FireballMover : MonoBehaviourPun {
         } else if (isIceball && body.velocity.y > 1.5f)  {
             breakOnImpact = true;
         }
+        
         bool breaking = physics.hitLeft || physics.hitRight || physics.hitRoof || (physics.onGround && breakOnImpact);
         if (photonView && breaking) {
             if (photonView.IsMine)
@@ -60,7 +75,7 @@ public class FireballMover : MonoBehaviourPun {
 
     public void OnDestroy() {
         if (!GameManager.Instance.gameover)
-            Instantiate(Resources.Load("Prefabs/Particle/" + (isIceball ? "IceballWall" : "FireballWall")), transform.position, Quaternion.identity);
+            Instantiate(Resources.Load("Prefabs/Particle/" + (isIceball ? "IceballWall" : (isHammer ? "HammerWall" : "FireballWall"))), transform.position, Quaternion.identity);
     }
 
     [PunRPC]
