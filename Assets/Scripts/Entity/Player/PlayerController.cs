@@ -830,7 +830,7 @@ public class PlayerController : MonoBehaviourPun, IFreezableEntity, ICustomSeria
             bool hammer = state == Enums.PowerupState.HammerFlower;
             string projectile = ice ? "Iceball" : "Fireball";
             projectile = hammer ? "Hammer" : projectile;
-            Enums.Sounds sound = ice ? Enums.Sounds.Powerup_Iceball_Shoot : Enums.Sounds.Powerup_Fireball_Shoot;
+            Enums.Sounds sound = ice ? Enums.Sounds.Powerup_Iceball_Shoot : (hammer ? Enums.Sounds.Powerup_Hammer_Shoot: Enums.Sounds.Powerup_Fireball_Shoot);
 
             Vector2 pos = body.position + new Vector2(facingRight ^ animator.GetCurrentAnimatorStateInfo(0).IsName("turnaround") ? 0.5f : -0.5f, 0.3f);
             if (Utils.IsTileSolidAtWorldLocation(pos) && !hammer) {

@@ -107,6 +107,8 @@ public static class Enums {
         [SoundData("powerup/fireball_shoot")]                   Powerup_Fireball_Shoot = 44,
         [SoundData("powerup/iceball_break")]                    Powerup_Iceball_Break = 46,
         [SoundData("powerup/iceball_shoot")]                    Powerup_Iceball_Shoot = 47,
+        [SoundData("powerup/hammer_throw")]                     Powerup_Hammer_Shoot = 95,
+        [SoundData("powerup/hammer_hit")]                       Powerup_Hammer_Break = 96,
         [SoundData("powerup/megamushroom_break_block")]         Powerup_MegaMushroom_Break_Block = 48,
         [SoundData("powerup/megamushroom_break_pipe")]          Powerup_MegaMushroom_Break_Pipe = 49,
         [SoundData("powerup/megamushroom_end")]                 Powerup_MegaMushroom_End = 50,
@@ -155,6 +157,8 @@ public static class Enums {
         [SoundData("world/star_spawn")]                         World_Star_Spawn = 76,
         [SoundData("world/water_splash")]                       World_Water_Splash = 77,
     }
+// Next free : 97
+
 
     #endregion
     #region NETWORKING

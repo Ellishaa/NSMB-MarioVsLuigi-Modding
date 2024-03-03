@@ -267,6 +267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   killTime: 0
+  killplaneDeath: 0
 --- !u!114 &7205141821402601888
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -22,7 +22,7 @@ public class FireballMover : MonoBehaviourPun {
 
         if (isHammer)
         {
-            body.velocity = new Vector2(speed * (left ? -1 : 1), 2.3f * speed);
+            body.velocity = new Vector2(speed * (left ? -1 : 1), 1.8f * speed);
             this.GetComponent<SpriteRenderer>().flipX = left;
         }
         else
@@ -73,7 +73,7 @@ public class FireballMover : MonoBehaviourPun {
     }
 
     public void OnDestroy() {
-        if (!GameManager.Instance.gameover)
+        if (!GameManager.Instance.gameover && !GetComponent<KillplaneKill>().killplaneDeath)
             Instantiate(Resources.Load("Prefabs/Particle/" + (isIceball ? "IceballWall" : (isHammer ? "HammerWall" : "FireballWall"))), transform.position, Quaternion.identity);
     }
 

@@ -58,7 +58,7 @@ MonoBehaviour:
   left: 0
   isIceball: 0
   isHammer: 1
-  speed: 5.1
+  speed: 5.7
   bounceHeight: 6.75
   terminalVelocity: 10
 --- !u!212 &1011982274984717419
@@ -214,6 +214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   killTime: 0
+  killplaneDeath: 0
 --- !u!114 &1011982274984717417
 MonoBehaviour:
   m_ObjectHideFlags: 0
